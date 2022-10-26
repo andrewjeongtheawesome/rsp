@@ -11,3 +11,10 @@ def is_a_winning_b(a: Hand, b: Hand) -> bool:
 
 def is_a_equal_b(a: Hand, b: Hand) -> bool:
     return a == b
+
+
+KOREAN_TABLE = {ROCK: '바위', PAPER: '보', SCISSORS: '가위'}
+
+
+def stringify(hand: Hand) -> str:
+    return KOREAN_TABLE[hand]
