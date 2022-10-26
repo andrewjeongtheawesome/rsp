@@ -26,3 +26,10 @@ is_a_equal_b(a: Hand, b: Hand) -> bool
 ```
 
 `a`와 `b`가 비겼는지 확인하는 함수
+
+```python
+stringify(hand: Hand) -> str
+```
+
+`hand`를 한국어로 변환하여 출력해주는 함수
+
