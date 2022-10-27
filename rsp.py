@@ -20,6 +20,6 @@ KOREAN_TABLE = {ROCK: '바위', PAPER: '보', SCISSORS: '가위'}
 def stringify(hand: Hand) -> str:
     return KOREAN_TABLE[hand]
 
-def random_choice() -> int:
-    return random.randrange(0,3)
 
+def random_choice() -> Hand:
+    return random.randrange(0,3)

@@ -33,3 +33,8 @@ stringify(hand: Hand) -> str
 
 `hand`를 한국어로 변환하여 출력해주는 함수
 
+```python
+random_choice() -> Hand
+```
+
+`ROCK`, `SCISSORS`, `PAPER`중 하나를 랜덤으로 골라서 출력하는 함수
