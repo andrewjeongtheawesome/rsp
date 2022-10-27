@@ -11,7 +11,7 @@ def is_a_winning_b(a: Hand, b: Hand) -> bool:
 
 
 def is_a_losing_b(a: Hand, b: Hand) -> bool:
-    if a!=b:
+    if a != b:
         return (a - b) % 3 != 2
     else:
         return False
