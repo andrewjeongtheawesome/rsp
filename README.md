@@ -22,6 +22,12 @@ is_a_winning_b(a: Hand, b: Hand) -> bool
 `a`가 `b`를 이기는 수인지 확인하는 함수
 
 ```python
+is_a_losing_b(a: Hand, b: Hand) -> bool
+```
+
+`a`가 `b`를 지는 수인지 확인하는 함수
+
+```python
 is_a_equal_b(a: Hand, b: Hand) -> bool
 ```
 
