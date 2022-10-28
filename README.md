@@ -7,11 +7,21 @@
 
 ### 상수
 
-* `Hand` 가위바위보 수 타입
+#### `Hand`
+
+가위바위보 수 타입
 
 * `ROCK` 가위바위보 중 '바위' 수를 의미한다
 * `SCISSORS` 가위바위보 중 '가위' 수를 의미한다
 * `PAPER` 가위바위보 중 '보' 수를 의미한다
+
+#### `Language`
+
+변환 가능한 언어
+
+* `KOREAN` 한국어
+* `MGB` 한국어 (묵찌빠)
+* `ENGLISH` 영어
 
 ### 함수
 
@@ -28,8 +38,8 @@ is_a_equal_b(a: Hand, b: Hand) -> bool
 `a`와 `b`가 비겼는지 확인하는 함수
 
 ```python
-stringify(hand: Hand) -> str
+stringify(hand: Hand, language: Language) -> str
 ```
 
-`hand`를 한국어로 변환하여 출력해주는 함수
+`hand`를 `language` 언어로 변환하여 출력해주는 함수
 
