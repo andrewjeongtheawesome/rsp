@@ -23,7 +23,7 @@ JAPANESE = 'japanese'
 LANGUAGE_TABLE = {
     KOREAN: ['바위', '가위', '보'],
     MGB: ['묵', '찌', '빠'],
-    ENGLISH: ['ROCK', 'SCISSORS', 'PAPER']
+    ENGLISH: ['ROCK', 'SCISSORS', 'PAPER'],
     JAPANESE: ['グー', 'チョキ', 'パー']
 }
 
