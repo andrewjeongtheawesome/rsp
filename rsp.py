@@ -17,10 +17,14 @@ def is_a_equal_b(a: Hand, b: Hand) -> bool:
 KOREAN = 'korean'
 MGB = 'mgb'
 ENGLISH = 'english'
+JAPANESE = 'japanese'
+
+
 LANGUAGE_TABLE = {
     KOREAN: ['바위', '가위', '보'],
     MGB: ['묵', '찌', '빠'],
     ENGLISH: ['ROCK', 'SCISSORS', 'PAPER']
+    JAPANESE: ['グ', 'チョキ', 'パ']
 }
 
 Language = str
