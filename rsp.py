@@ -25,11 +25,10 @@ LANGUAGE_TABLE = {
 
 Language = str
 
-def stringify(hand: Hand) -> str:
-    return KOREAN_TABLE[hand]
 
 def stringify(hand: Hand, language: Language = KOREAN) -> str:
     return LANGUAGE_TABLE[language][hand]
+
 
 def random_choice() -> Hand:
     return random.randrange(0,3)
