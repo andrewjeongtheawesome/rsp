@@ -4,6 +4,7 @@ Hand = int
 ROCK = 0
 SCISSORS = 1
 PAPER = 2
+com_pro=1/3
 
 
 def is_a_winning_b(a: Hand, b: Hand) -> bool:
