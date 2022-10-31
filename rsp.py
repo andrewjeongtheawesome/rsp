@@ -25,11 +25,9 @@ def random_choice() -> Hand:
     return random.randrange(0,3)
 
 
-def probability():
+def probability(input):
     global com_pro
-    com_pro = 0
-    com_pro = int(input("컴퓨터의 승률을 입력하세요.(단위:%,범위:0~100)"))/100
-    print("입력 완료 되었습니다.")
+    com_pro = input
 
 
 def random_choice_probability(a: Hand) -> int:
