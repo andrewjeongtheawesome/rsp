@@ -24,7 +24,7 @@ LANGUAGE_TABLE = {
     KOREAN: ['바위', '가위', '보'],
     MGB: ['묵', '찌', '빠'],
     ENGLISH: ['ROCK', 'SCISSORS', 'PAPER']
-    JAPANESE: ['グ', 'チョキ', 'パ']
+    JAPANESE: ['グー', 'チョキ', 'パー']
 }
 
 Language = str
