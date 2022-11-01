@@ -19,7 +19,7 @@
 
 변환 가능한 언어
 
-* `KOREAN` 한국어
+* `KOREAN` 한국어 (기본값)
 * `MGB` 한국어 (묵찌빠)
 * `ENGLISH` 영어
 * `JAPANESE` 일본어
