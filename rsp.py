@@ -18,13 +18,15 @@ KOREAN = 'korean'
 MGB = 'mgb'
 ENGLISH = 'english'
 JAPANESE = 'japanese'
+CHINESE = 'chinese'
 
 
 LANGUAGE_TABLE = {
     KOREAN: ['바위', '가위', '보'],
     MGB: ['묵', '찌', '빠'],
     ENGLISH: ['ROCK', 'SCISSORS', 'PAPER'],
-    JAPANESE: ['グー', 'チョキ', 'パー']
+    JAPANESE: ['グー', 'チョキ', 'パー'],
+    CHINESE: ['石头',  '剪刀', '布']
 }
 
 Language = str
