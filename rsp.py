@@ -67,22 +67,22 @@ def random_choice() -> Hand:
 com_pro = 1/3
 
 
-def probability(input):
+def probability(pro: float):
     global com_pro
-    com_pro = input
+    com_pro = pro
 
 
-def random_choice_probability(a: Hand) -> int:
+def random_choice_probability(a: Hand) -> Hand:
     left = round(((1 - com_pro) / 2), 1)
     my_weights = list()
 
-    if a == 0:
+    if a == ROCK:
         my_weights = [left, com_pro, left]
-    elif a == 1:
+    elif a == SCISSORS:
         my_weights = [left, left, com_pro]
-    elif a == 2:
+    elif a == PAPER:
         my_weights = [com_pro, left, left]
 
-    char_choice = random.choices(range(0, 3), weights=my_weights, k=1)
+    char_choice = random.choices((ROCK, SCISSORS, PAPER), weights=my_weights, k=1)
     return char_choice[0]
 
