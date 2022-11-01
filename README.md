@@ -54,10 +54,22 @@ stringify(hand: Hand, language: Language) -> str
 ```python
 hand_convert(string: str) -> Hand
 ```
-`사용자입력`을 `hand 타입`으로 바꿔주는 함수
+사용자 입력을 `Hand` 타입으로 바꿔주는 함수
 
 ```python
 random_choice() -> Hand
 ```
 
 `ROCK`, `SCISSORS`, `PAPER`중 하나를 랜덤으로 골라서 출력하는 함수
+
+```python
+probability(pro: float)
+```
+
+`random_choice_probability` 함수의 확률을 결정하는 함수
+
+```python
+random_choice_probability(a: Hand) -> Hand
+```
+
+`a`의 확률에 가중치를 부여하여 랜덤으로 골라 출력하는 함수
