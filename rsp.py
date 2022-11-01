@@ -25,7 +25,7 @@ def random_choice() -> Hand:
     return random.randrange(0,3)
 
 
-com_pro=1/3
+com_pro = 1/3
 
 
 def probability(input):
