@@ -22,7 +22,7 @@ def stringify(hand: Hand) -> str:
 
 
 def random_choice() -> Hand:
-    return random.randrange(0,3)
+    return random.randrange(0, 3)
 
 
 com_pro = 1/3
@@ -34,13 +34,13 @@ def probability(input):
 
 
 def random_choice_probability(a: Hand) -> int:
-    left=round(((1-com_pro)/2),1)
-    if a==0:
-        char_choice=random.choices(range(0,3),weights=[left,com_pro,left],k=1)
+    left = round(((1 - com_pro) / 2), 1)
+    if a == 0:
+        char_choice = random.choices(range(0, 3),weights=[left, com_pro, left], k=1)
         return char_choice[0]
-    elif a==1:
-        char_choice=random.choices(range(0,3),weights=[left,left,com_pro],k=1)
+    elif a == 1:
+        char_choice = random.choices(range(0, 3),weights=[left, left, com_pro], k=1)
         return char_choice[0]
-    elif a==2:
-        char_choice=random.choices(range(0,3),weights=[com_pro,left,left],k=1)
+    elif a == 2:
+        char_choice = random.choices(range(0, 3),weights=[com_pro, left, left], k=1)
         return char_choice[0]
