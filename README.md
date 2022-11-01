@@ -52,6 +52,11 @@ stringify(hand: Hand, language: Language) -> str
 `hand`를 `language` 언어로 변환하여 출력해주는 함수
 
 ```python
+hand_convert(string: str) -> Hand
+```
+`사용자입력`을 `hand 타입`으로 바꿔주는 함수
+
+```python
 random_choice() -> Hand
 ```
 
