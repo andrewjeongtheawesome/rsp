@@ -4,7 +4,6 @@ Hand = int
 ROCK = 0
 SCISSORS = 1
 PAPER = 2
-com_pro=1/3
 
 
 def is_a_winning_b(a: Hand, b: Hand) -> bool:
@@ -24,6 +23,9 @@ def stringify(hand: Hand) -> str:
 
 def random_choice() -> Hand:
     return random.randrange(0,3)
+
+
+com_pro=1/3
 
 
 def probability(input):
