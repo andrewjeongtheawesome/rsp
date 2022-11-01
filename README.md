@@ -22,6 +22,8 @@
 * `KOREAN` 한국어
 * `MGB` 한국어 (묵찌빠)
 * `ENGLISH` 영어
+* `JAPANESE` 일본어
+* `CHINESE` 중국어
 
 ### 함수
 
