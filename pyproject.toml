@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sch_ossc_rsp"
-version = "1.0.0"
+version = "1.1.0"
 authors = [
   { name="전한결", email="junhg0211@sch.ac.kr" },
   { name="정지원", email="imprayer1@naver.com" },
