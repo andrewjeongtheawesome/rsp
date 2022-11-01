@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sch_ossc_rsp"
+version = "1.1.0"
+authors = [
+  { name="전한결", email="junhg0211@sch.ac.kr" },
+  { name="정지원", email="imprayer1@naver.com" },
+  { name="방제영", email="bjy78910@sch.ac.kr" },
+  { name="김정훈", email="joshuakjh.b612@gmail.com" },
+  { name="장준서", email="junseo12154@naver.com" },
+]
+description = "가위바위보 프로그램"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/andrewjeongtheawesome/rsp"
+"Bug Tracker" = "https://github.com/andrewjeongtheawesome/rsp/issues"
