@@ -35,12 +35,14 @@ def probability(input):
 
 def random_choice_probability(a: Hand) -> int:
     left = round(((1 - com_pro) / 2), 1)
+    my_weights = list()
+
     if a == 0:
-        char_choice = random.choices(range(0, 3),weights=[left, com_pro, left], k=1)
-        return char_choice[0]
+        my_weights = [left, com_pro, left]
     elif a == 1:
-        char_choice = random.choices(range(0, 3),weights=[left, left, com_pro], k=1)
-        return char_choice[0]
+        my_weights = [left, left, com_pro]
     elif a == 2:
-        char_choice = random.choices(range(0, 3),weights=[com_pro, left, left], k=1)
-        return char_choice[0]
+        my_weights = [com_pro, left, left]
+
+    char_choice = random.choices(range(0, 3), weights=my_weights, k=1)
+    return char_choice[0]
