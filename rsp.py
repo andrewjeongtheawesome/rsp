@@ -40,6 +40,26 @@ def stringify(hand: Hand, language: Language = KOREAN) -> str:
     return LANGUAGE_TABLE[language][hand]
 
 
+def hand_convert(string: str) -> Hand:
+    rock_list = []
+    scissors_list = []
+    paper_list = []
+
+    for _, (rock, scissors, paper) in LANGUAGE_TABLE.items():
+        rock_list.append(rock)
+        scissors_list.append(scissors)
+        paper_list.append(paper)
+
+    if string in rock_list:
+        return ROCK
+
+    elif string in scissors_list:
+        return SCISSORS
+
+    elif string in paper_list:
+        return PAPER
+
+
 def random_choice() -> Hand:
     return random.randrange(0, 3)
 
@@ -65,3 +85,4 @@ def random_choice_probability(a: Hand) -> int:
 
     char_choice = random.choices(range(0, 3), weights=my_weights, k=1)
     return char_choice[0]
+
