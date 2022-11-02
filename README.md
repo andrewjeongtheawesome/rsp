@@ -3,6 +3,30 @@
 > 파이썬 가위바위보 라이브러리
 
 가위바위보 기능을 파이썬에서 라이브러리로 이용할 수 있도록 개발되었습니다.
+
+## 설치 및 예시
+
+```
+pip install sch-ossc-rsp
+```
+
+```python
+import rsp
+
+answer = input('수를 입력하세요: ')
+
+your_hand = rsp.hand_convert(answer)
+computer_hand = rsp.random_choice()
+
+print(f'당신의 수    {rsp.stringify(your_hand, rsp.KOREAN)}')
+print(f'컴퓨터의 수  {rsp.stringify(your_hand, rsp.KOREAN)}')
+
+if rsp.is_a_winning_b(your_hand, computer_hand):
+    print('당신 승리!')
+else:
+    print('당신 안 승리!')
+```
+
 ## 기능
 
 ### 상수
